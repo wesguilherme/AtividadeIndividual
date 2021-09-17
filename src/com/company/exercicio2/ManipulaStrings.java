@@ -8,6 +8,12 @@ public class ManipulaStrings {
     }
 
     public static void palíndromo(String nome){
-
+        String nomet = nome.replaceAll("\\s+","");
+        String t = new StringBuilder(nomet).reverse().toString();
+        if (nomet.equalsIgnoreCase(t)){
+            System.out.println("É palíndromo");
+        }else{
+            System.out.println("Não é palíndromo");
+        }
     }
 }
